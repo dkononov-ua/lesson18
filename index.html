@@ -2,57 +2,80 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-</head>
 
 <body>
 
-	<nav class="header-navbar">
-		<div class="header-navbar__btn">
-			<span class="header-navbar__btn-row"></span>
-			<span class="header-navbar__btn-row"></span>
-			<span class="header-navbar__btn-row"></span>
-			<span class="header-navbar__btn-row"></span>
-		</div>
-		<ol class="header-navbar__list">
-			<li class="header-navbar__item">
-				<a class="header-navbar__link" href="">Home</a>
-			</li>
-			<li class="header-navbar__item">
-				<a class="header-navbar__link" href="">About</a>
-			</li>
-			<li class="header-navbar__item">
-				<a class="header-navbar__link" href="">Contacts</a>
-			</li>
-		</ol>
-	</nav>
+  <nav class="navbar">
+    <ul class="navbar_list">
+      <li class="navbar_item">MONTENEGRO</li>
+      <li class="navbar_item">SPAIN</li>
+      <li class="navbar_item">AUSTRIA</li>
+    </ul>
+  </nav>
 
-	<div class="carousel" id="carousel">
+  <div class="title">
+    <div>
+      <h1 class="title_name">BARSELONA</h1>
+    </div>
+  </div>
 
-		<div id="slides-container" class="slides">
-			<div class="slide item active" style="background-image: url(assets/img/slide1.jpeg)">Slide 1</div>
-			<div class="slide item" style="background-image: url(assets/img/slide2.jpg)">Slide 2</div>
-			<div class="slide item" style="background-image: url(assets/img/slide3.jpeg)">Slide 3</div>
-			<div class="slide item" style="background-image: url(assets/img/slide4.jpg)">Slide 4</div>
-			<div class="slide item" style="background-image: url(assets/img/slide5.jpeg)">Slide 5</div>
-			<div class="slide item" style="background-image: url(assets/img/slide6.JPG)">Slide 6</div>
-			<div class="slide item" style="background-image: url(assets/img/slide7.jpg)">Slide 7</div>
-			<div class="slide item" style="background-image: url(assets/img/slide8.jpg)">Slide 8</div>
-			<div class="slide item" style="background-image: url(assets/img/slide9.jpg)">Slide 9</div>
-		</div>
+  <div class="title_text">
+    <h2>Highlights of the trip</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil modi
+      voluptas, reiciendis sint molestiae velit?
+    </p>
+  </div>
 
-	</div>
+  <div class="container">
+    <div class="carousel" id="carousel">
+      <div id="slides-container" class="slides">
+        <div class="slide item active" style="background-image: url(assets/img/slide1.jpeg)"><span
+            class="slide_text">...city walks</span>
+        </div>
+        <div class="slide item" style="background-image: url(assets/img/slide2.jpg)">
+          <span
+            class="slide_text">...dancing on the beach</span>
+        </div>
+        <div class="slide item" style="background-image: url(assets/img/slide3.jpeg)">
+          <span
+            class="slide_text">...beach and burgers</span>
+        </div>
+        <div class="slide item" style="background-image: url(assets/img/slide4.jpg)">
+          <span
+            class="slide_text">...chasing seagulls</span>
+        </div>
+        <div class="slide item" style="background-image: url(assets/img/slide6.JPG)">
+          <span
+            class="slide_text">...palm trees</span>
+        </div>
+        <div class="slide item" style="background-image: url(assets/img/slide5.jpeg)">
+          <span
+            class="slide_text">...many palm trees</span>
+        </div>
+        <div class="slide item" style="background-image: url(assets/img/slide8.jpg)">
+          <span
+            class="slide_text">...many birds</span>
+        </div>
+        <div class="slide item" style="background-image: url(assets/img/slide9.jpg)">
+          <span
+            class="slide_text">...and some more birds</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<script src="assets/js/index.js" type="module"></script>
-
+  <script src="assets/js/index.js" type="module"></script>
 </body>
 
 </html>

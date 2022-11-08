@@ -1,5 +1,5 @@
-@use "../../presets" as *;
 @use "../../mixins" as *;
+@use "../../presets" as *;
 
 *,
 *::before,
@@ -9,9 +9,7 @@
 
 html {
   overflow-y: scroll;
-
   font-family: $font-main;
-  font-size: $font-size;
 }
 
 h1 {
@@ -33,7 +31,7 @@ h1 {
 }
 
 h2 {
-  letter-spacing: 0.1em;
+  position: relative;
 
   color: $color-primary;
 
@@ -66,8 +64,8 @@ h2 {
 
 h3 {
   letter-spacing: 0.05em;
-
-  color: $color-gray;
+  
+  color: $color-primary;
 
   font-size: 1.125rem;
 }
@@ -79,9 +77,64 @@ a {
 }
 
 p {
+  font-size: $font-size;
   color: $color-gray;
+  position: relative;
 }
 
 input:focus {
   outline: none;
 }
+
+.title {
+  top: 8rem;
+  left: 100px;
+  position: absolute;
+  color: black;
+  display: block;
+  z-index: 999;
+}
+
+.title_name {
+  z-index: 999;
+  margin: 0;
+  font-size: 80px;
+  color: black;
+}
+
+.title_name:hover {
+  font-size: 80px;
+  color: orange;
+  text-shadow: 0 0 15px orange;
+}
+
+.title_text {
+  font-style: $font-main;
+  top: 18rem;
+  left: 100px;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  padding: 15px;
+
+  border-style: groove;
+  border-color: rgba(0, 0, 0, 0.47);
+  border-width: 1px;
+  border-radius: 1em;
+}
+
+.slide_text{
+  color: orange;
+  position: absolute;
+  display: block;
+  padding: 10px;
+  font-size: 50px;
+  z-index: 999;
+
+  left: -32rem;
+  top: 13rem;
+
+  text-shadow: 0 0 15px orange;
+}
+
+

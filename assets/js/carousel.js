@@ -118,6 +118,7 @@ class Carousel {
       this.isPlaying = false;
       clearInterval(this.timerID);
     }
+    
   }
 
   _swipeEnd(e) {
