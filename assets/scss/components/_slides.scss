@@ -1,52 +1,87 @@
-@use "../mixins" as *;
 @use "../presets" as *;
+@use "../mixins" as *;
 
 .container {
   position: absolute;
-  left: 40%;
-  min-width: 60%;
   min-height: 100vh;
   background-position: center;
   background-size: cover;
+  right: 0;
+  min-width: 60%;
+  min-height: 100%;
 
-  @include lg-min {
-    font-size: 3.75rem;
+  @include md-sm {
+    min-width: 100%;
   }
-  @include lg-md {
-    font-size: 2.5rem;
-  }
-  @include md {
-    font-size: 1.875rem;
+  @include sm {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 
 .slides {
   position: relative;
-
   height: 100vh;
-
   list-style-type: none;
 }
 
 .slide {
   position: absolute;
-
   width: 100%;
   height: 100%;
-
   transition: opacity 1s;
-
   opacity: 0;
   background-position: 50% 50%;
   background-size: cover;
-
-  font-size: 40px;
   z-index: -5;
 }
 .slide a {
   position: absolute;
 }
 .slide.active {
-
   opacity: 1;
+}
+
+.slide_text {
+  font-family: $font-main;
+  position: absolute;
+  color: orange;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.49);
+  top: 0;
+  height: auto;
+
+  @include ul-min {
+    font-size: 3rem;
+    top: 28%;
+    left: -50%;
+    width: 400px;
+
+  }
+
+  @include ul-xl {
+    font-size: 3rem;
+    top: 28%;
+    left: -50%;
+    width: 300px;
+  }
+
+  @include xl-md {
+    font-size: 3rem;
+    top: 28%;
+    left: -40%;
+    width: 200px;
+  }
+
+  @include md-sm {
+    font-size: 3rem;
+    top: 28%;
+    left: 20%;
+  }
+
+  @include sm {
+    font-size: 3rem;
+    top: 28%;
+    left: 20%;
+  }
 }

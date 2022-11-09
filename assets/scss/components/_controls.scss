@@ -21,15 +21,13 @@
 .fa-play-circle,
 .fa-pause-circle {
   color: $color-primary;
-
-  font-size: 40vh;
 }
 
 .control-next,
 .control-prev,
 .control-pause {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: 0;
   bottom: 0;
 
@@ -95,4 +93,46 @@
   text-shadow: 0 0 15px #000000;
   transition: opacity 1s ease-in 0.01s;
   opacity: 1;
+}
+
+.fa-play-circle,
+.fa-pause-circle {
+@include ul-min {
+  font-size: 30vh;
+}
+
+@include ul-xl {
+  font-size: 20vh;
+
+}
+
+@include xl-sm {
+  font-size: 15vh;
+
+}
+
+@include sm {
+  font-size: 10vh;
+}
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  @include ul-min {
+    font-size: 10vh;
+  }
+  
+  @include ul-xl {
+    font-size: 7vh;
+  
+  }
+  
+  @include xl-sm {
+    font-size: 5vh;
+
+  }
+  
+  @include sm {
+    font-size: 4vh;
+  }
 }
