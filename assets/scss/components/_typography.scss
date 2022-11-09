@@ -43,8 +43,10 @@ a {
 }
 
 p {
-  color: $color-gray;
+  color: $color-light;
   position: relative;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+
 }
 
 input:focus {
@@ -102,21 +104,25 @@ input:focus {
 
 .title_name:hover {
   color: orange;
-  text-shadow: 0 0 15px orange;
+  text-shadow: 0 0 50px orange;
 }
 
 .title_text {
+
   font-style: $font-main;
   color: $color-primary;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+
   position: absolute;
   display: block;
-  padding: 15px;
+
+  padding: 10px;
   z-index: 10;
 
   border-style: groove;
-  border-color: $color-primary;
-  border-width: 1px;
-  border-radius: 1em;
+  border-color: $color-light;
+  border-width: 2px;
+  border-radius: 2em;
 
   @include ul-min {
     bottom: 4rem;
@@ -174,4 +180,16 @@ input:focus {
     font-size: 1.4rem;
     width: auto;
   }
+}
+
+.wrapper {
+  display: flex;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
 }

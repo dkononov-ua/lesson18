@@ -1,0 +1,14 @@
+@use "../mixins" as *;
+@use "../presets" as *;
+
+.title_text_btn {
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  margin-bottom: 15px;
+}
+.btn {
+  background-color: red;
+  left: 0;
+  top: 0;
+}

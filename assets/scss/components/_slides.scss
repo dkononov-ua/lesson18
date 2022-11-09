@@ -7,7 +7,7 @@
   background-position: center;
   background-size: cover;
   right: 0;
-  min-width: 60%;
+  min-width: 70%;
   min-height: 100%;
 
   @include md-sm {
@@ -52,10 +52,10 @@
   height: auto;
 
   @include ul-min {
-    font-size: 3rem;
-    top: 28%;
-    left: -50%;
-    width: 400px;
+    font-size: 4rem;
+    top: 30%;
+    left: -30%;
+    width: 300px;
 
   }
 
