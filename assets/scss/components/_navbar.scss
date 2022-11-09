@@ -1,27 +1,25 @@
-@use "../../mixins" as *;
-@use "../../presets" as *;
+@use "../mixins" as *;
+@use "../presets" as *;
 
 .navbar {
 	position: absolute;
 	display: inline-block;
-	z-index: 999;
 	width: 100%;
 	background: linear-gradient(to bottom, rgb(95, 94, 94), rgba(0, 0, 0, 0));
 	height: 50px;
-	padding-left: 60px;
-	padding-top: 10px;
-}
-
-.navbar:hover,.navbar:focus {
+	padding-left: 6rem;
+	padding-top: 2rem;
+	z-index: 5;
 }
 
 .navbar_list {
+	position: relative;
 	display: flex;
 }
 .navbar_item {
 	list-style: none;
 	margin-right: $gap;
-	color: rgb(0, 0, 0);
+	color: $color-primary;
 	margin: 10px;
   text-shadow: 0 0 20px #000000;
 }

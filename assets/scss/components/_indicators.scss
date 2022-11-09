@@ -1,13 +1,13 @@
+@use "../mixins" as *;
+@use "../presets" as *;
+
 .indicators {
   position: absolute;
-  z-index: 1;
   bottom: 0;
 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 
   width: 100%;
@@ -23,7 +23,7 @@
   height: 20px;
   margin: -40px 7.5px 0;
 
-  border: 3px solid rgba(255, 255, 255, 0.4);
+  border: 3px solid $color-primary;
   border-radius: 50%;
   outline: none;
   background: none;
@@ -33,9 +33,7 @@
   cursor: pointer;
 }
 .indicator.active {
-  border-color: #ffffff;
-  -webkit-box-shadow: 0 0 10px #ffffff;
-  box-shadow: 0 0 10px #ffffff;
+  border-color: orange;
 }
 @media (min-width: 992px) {
   .control-next,

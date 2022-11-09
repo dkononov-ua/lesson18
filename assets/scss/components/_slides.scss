@@ -1,5 +1,5 @@
-@use "../../mixins" as *;
-@use "../../presets" as *;
+@use "../mixins" as *;
+@use "../presets" as *;
 
 .container {
   position: absolute;
@@ -8,6 +8,16 @@
   min-height: 100vh;
   background-position: center;
   background-size: cover;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+  @include md {
+    font-size: 1.875rem;
+  }
 }
 
 .slides {
@@ -24,8 +34,6 @@
   width: 100%;
   height: 100%;
 
-  -webkit-transition: opacity 1s;
-  -o-transition: opacity 1s;
   transition: opacity 1s;
 
   opacity: 0;
@@ -33,12 +41,12 @@
   background-size: cover;
 
   font-size: 40px;
+  z-index: -5;
 }
 .slide a {
   position: absolute;
 }
 .slide.active {
-  z-index: 1;
 
   opacity: 1;
 }

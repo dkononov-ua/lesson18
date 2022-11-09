@@ -1,5 +1,5 @@
-@use "../../mixins" as *;
-@use "../../presets" as *;
+@use "../mixins" as *;
+@use "../presets" as *;
 
 *,
 *::before,
@@ -8,7 +8,6 @@
 }
 
 html {
-  overflow-y: scroll;
   font-family: $font-main;
 }
 
@@ -88,53 +87,80 @@ input:focus {
 
 .title {
   top: 8rem;
-  left: 100px;
+  left: 8rem;
   position: absolute;
   color: black;
   display: block;
-  z-index: 999;
 }
 
 .title_name {
-  z-index: 999;
   margin: 0;
-  font-size: 80px;
-  color: black;
+  font-size: 90px;
+  color: $color-primary;
+  text-shadow: 0 0 15px rgb(255, 255, 255);
+  font-weight: 400;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+  @include md {
+    font-size: 1.875rem;
+  }
 }
 
 .title_name:hover {
-  font-size: 80px;
   color: orange;
   text-shadow: 0 0 15px orange;
 }
 
 .title_text {
   font-style: $font-main;
+  color: $color-primary;
   top: 18rem;
-  left: 100px;
+  left: 10rem;
   position: absolute;
   width: 400px;
   height: 400px;
   padding: 15px;
 
   border-style: groove;
-  border-color: rgba(0, 0, 0, 0.47);
+  border-color: $color-primary;
   border-width: 1px;
   border-radius: 1em;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+  @include md {
+    font-size: 1.875rem;
+  }
 }
 
 .slide_text{
+  font-family: $font-main;
   color: orange;
   position: absolute;
   display: block;
-  padding: 10px;
-  font-size: 50px;
-  z-index: 999;
-
-  left: -32rem;
   top: 13rem;
+  left: -30rem;
 
-  text-shadow: 0 0 15px orange;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.49);
+
+  @include lg-min {
+  font-size: 2.5rem;
+  }
+  @include lg-md {
+    font-size: 1.5rem;
+  }
+  @include md {
+    font-size: 0.875rem;
+  }
 }
 
 
