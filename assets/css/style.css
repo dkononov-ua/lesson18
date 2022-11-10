@@ -209,8 +209,6 @@ body {
   position: absolute;
   top: 0;
 
-  height: auto;
-
   color: orange;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.49);
 
@@ -271,11 +269,13 @@ input:focus {
 }
 
 .title {
-  position: absolute;
+  position: relative;
   z-index: 10;
-  top: 6rem;
-  left: 10rem;
+  top: 20%;
 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   display: block;
 
   color: black;
@@ -283,6 +283,7 @@ input:focus {
 
 .title_name {
   margin: 0;
+  margin-left: 8rem;
 
   color: rgba(2, 2, 24, 0.918);
   text-shadow: 0 0 15px rgb(255, 255, 255);
@@ -296,43 +297,57 @@ input:focus {
 }
 
 .title_text {
-  position: absolute;
-  z-index: 10;
-
-  display: block;
-
-  padding: 10px;
-
-  color: rgba(2, 2, 24, 0.918);
-  border-width: 2px;
-  border-style: groove;
-  border-color: #ffffff;
-  border-radius: 2em;
-  text-shadow: 0 0 10px rgb(255, 255, 255);
-
-  font-style: "Josefin Sans", sans-serif;
-}
-
-.wrapper {
-  z-index: 1;
+  position: relative;
+  left: 10rem;
 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: block;
+
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 30px;
+  padding: 10px;
+
+  border-width: 2px;
+  border-style: groove;
+  border-color: #ffffff;
+  border-radius: 2em;
+
+  font-size: 2rem;
+}
+.wrapper {
+  position: relative;
+  z-index: 0;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   margin-bottom: 10px;
 }
 
 .wrapper {
-  min-height: 100vh;
+  min-height: calc(100vh - 10px);
 
   background-position: center;
   background-size: cover;
 }
 
+image {
+  z-index: -5;
+}
+
 .navbar {
-  position: absolute;
-  z-index: 5;
+  position: relative;
+  z-index: 0;
 
   display: inline-block;
 
@@ -400,8 +415,8 @@ input:focus {
     font-size: 10vh;
   }
   .slide_text {
-    top: 30%;
-    left: -30%;
+    top: 35%;
+    left: -35%;
 
     width: 300px;
 
@@ -409,15 +424,6 @@ input:focus {
   }
   .title_name {
     font-size: 8rem;
-  }
-  .title_text {
-    bottom: 4rem;
-    left: 10rem;
-
-    width: 400px;
-    min-height: auto;
-
-    font-size: 2rem;
   }
   .navbar {
     font-size: 1.8rem;
@@ -443,15 +449,6 @@ input:focus {
   }
   .title_name {
     font-size: 7rem;
-  }
-  .title_text {
-    bottom: 6rem;
-    left: 5rem;
-
-    width: 400px;
-    min-height: auto;
-
-    font-size: 1.8rem;
   }
   .navbar {
     font-size: 1.6rem;
@@ -484,15 +481,6 @@ input:focus {
   .title_name {
     font-size: 6rem;
   }
-  .title_text {
-    bottom: 3rem;
-    left: 5rem;
-
-    width: 350px;
-    min-height: auto;
-
-    font-size: 1.6rem;
-  }
   .navbar {
     font-size: 1.4rem;
   }
@@ -501,15 +489,6 @@ input:focus {
 @media (max-width: 991.8px) and (min-width: 768px) {
   .title_name {
     font-size: 5rem;
-  }
-  .title_text {
-    bottom: 6rem;
-    left: 5rem;
-
-    width: 350px;
-    min-height: auto;
-
-    font-size: 1.6rem;
   }
   .navbar {
     font-size: 1.2rem;
@@ -531,15 +510,6 @@ input:focus {
   }
   .title_name {
     font-size: 4rem;
-  }
-  .title_text {
-    bottom: 6rem;
-    left: 5rem;
-
-    width: 300px;
-    min-height: auto;
-
-    font-size: 1.6rem;
   }
   .navbar {
     font-size: 1rem;
@@ -567,24 +537,10 @@ input:focus {
     font-size: 3rem;
   }
   .title {
-    top: 10%;
     left: 10%;
   }
   .title_name {
     font-size: 3rem;
-  }
-  .title_text {
-    top: 50%;
-    right: 10%;
-    bottom: 6rem;
-    left: 10%;
-
-    width: auto;
-
-    text-shadow: 0 0 8px rgb(255, 255, 255);
-
-    font-size: 2rem;
-    font-size: 1.4rem;
   }
   .navbar {
     padding: 0;

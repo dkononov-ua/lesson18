@@ -46,7 +46,6 @@ p {
   color: $color-light;
   position: relative;
   text-shadow: 0 0 10px rgb(0, 0, 0);
-
 }
 
 input:focus {
@@ -54,19 +53,18 @@ input:focus {
 }
 
 .title {
-  top: 6rem;
-  left: 10rem;
-  position: absolute;
+  position: relative;
+  display: flex;
   color: black;
   display: block;
   z-index: 10;
+  top: 20%;
 
   @include md-sm {
     top: 4 rem;
   }
 
   @include sm {
-    top: 10%;
     left: 10%;
   }
 }
@@ -76,6 +74,7 @@ input:focus {
   color: $color-primary;
   text-shadow: 0 0 15px rgb(255, 255, 255);
   font-weight: 400;
+  margin-left: 8rem;
 
   @include ul-min {
     font-size: 8rem;
@@ -108,88 +107,54 @@ input:focus {
 }
 
 .title_text {
+  position: relative;
 
-  font-style: $font-main;
-  color: $color-primary;
-  text-shadow: 0 0 10px rgb(255, 255, 255);
+  left: 10rem;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 30px;
+  padding: 10px;
 
-  position: absolute;
+  display: flex;
   display: block;
 
-  padding: 10px;
-  z-index: 10;
+  font-size: 2rem;
 
   border-style: groove;
   border-color: $color-light;
   border-width: 2px;
   border-radius: 2em;
 
-  @include ul-min {
-    bottom: 4rem;
-    left: 10rem;
-
-    font-size: 2rem;
-    width: 400px;
-    min-height: auto;
-  }
-
   @include ul-xl {
-    bottom: 6rem;
-    left: 5rem;
-
-    font-size: 1.8rem;
-    width: 400px;
-    min-height: auto;
-  }
-  @include xl-lg {
-    bottom: 3rem;
-    left: 5rem;
-
-    font-size: 1.6rem;
-    width: 350px;
-    min-height: auto;
   }
 
-  @include lg-md {
-    bottom: 6rem;
-    left: 5rem;
-
-    font-size: 1.6rem;
-    width: 350px;
-    min-height: auto;
+  @include xl-md {
   }
 
   @include md-sm {
-    bottom: 6rem;
-    left: 5rem;
-
-    font-size: 1.6rem;
-    width: 300px;
-    min-height: auto;
   }
 
   @include sm {
-    font-size: 2rem;
-    top: 50%;
-    left: 10%;
-    right: 10%;
-    bottom: 6rem;
-
-    text-shadow: 0 0 8px rgb(255, 255, 255);
-
-    font-size: 1.4rem;
-    width: auto;
   }
+
 }
 
 .wrapper {
+  position: relative;
   display: flex;
-  z-index: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  z-index: 0;
   margin-bottom: 10px;
 }
 
 .wrapper {
-  min-height: 100vh;
+  min-height: calc(100vh - 10px);
   background-position: center;
   background-size: cover;
+}
+
+image {
+  z-index: -5;
 }

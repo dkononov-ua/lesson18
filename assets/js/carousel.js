@@ -39,6 +39,7 @@ class Carousel {
     this.pauseBtn = this.container.querySelector("#btn-pause");
     this.prevBtn = this.container.querySelector("#btn-prev");
     this.nextBtn = this.container.querySelector("#btn-next");
+    this.sliderBtn = this.container.querySelector("#btn-slider");
   }
 
   _initIndicators() {

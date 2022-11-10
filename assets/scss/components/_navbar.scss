@@ -2,13 +2,13 @@
 @use "../presets" as *;
 
 .navbar {
-	position: absolute;
+	position: relative;
 	display: inline-block;
 	width: 100%;
 	background: linear-gradient(to bottom, rgb(95, 94, 94), rgba(0, 0, 0, 0));
 	height: 150px;
 	padding-top: 2rem;
-	z-index: 5;
+	z-index: 0;
 
 	@include ul-min {
 		font-size: 1.8rem;
