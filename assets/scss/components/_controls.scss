@@ -11,11 +11,11 @@
 
 .fa-angle-left,
 .fa-angle-right {
-  color: $color-primary;
-  text-shadow: 0 0 15px #ffffff;
-    transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
 
   opacity: 0.2;
+  color: $color-primary;
+  text-shadow: 0 0 15px #ffffff;
 }
 
 .fa-play-circle,
@@ -36,7 +36,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .control-prev {
@@ -45,9 +44,9 @@
 
 .control-pause {
   top: 50%;
-  left: 50%;
   right: 50%;
   bottom: 50%;
+  left: 50%;
 
   height: 0;
   padding: 0;
@@ -74,46 +73,45 @@
 }
 .control-prev {
   left: 0;
+
   width: 30%;
 }
 .fa-angle-left:hover,
 .fa-angle-left:focus {
+  transition: opacity 1s ease-in 0.01s;
+
+  opacity: 1;
   color: orange;
   text-shadow: 0 0 15px #000000;
-  transition: opacity 1s ease-in 0.01s;
-  opacity: 1;
 }
 .control-next {
   right: 0;
+
   width: 10%;
 }
 .fa-angle-right:hover,
 .fa-angle-right:focus {
+  transition: opacity 1s ease-in 0.01s;
+
+  opacity: 1;
   color: orange;
   text-shadow: 0 0 15px #000000;
-  transition: opacity 1s ease-in 0.01s;
-  opacity: 1;
 }
 
 .fa-play-circle,
 .fa-pause-circle {
-@include ul-min {
-  font-size: 30vh;
-}
-
-@include ul-xl {
-  font-size: 20vh;
-
-}
-
-@include xl-sm {
-  font-size: 15vh;
-
-}
-
-@include sm {
-  font-size: 10vh;
-}
+  @include ul-min {
+    font-size: 30vh;
+  }
+  @include ul-xl {
+    font-size: 20vh;
+  }
+  @include xl-sm {
+    font-size: 15vh;
+  }
+  @include sm {
+    font-size: 10vh;
+  }
 }
 
 .fa-angle-left,
@@ -121,17 +119,12 @@
   @include ul-min {
     font-size: 10vh;
   }
-  
   @include ul-xl {
     font-size: 7vh;
-  
   }
-  
   @include xl-sm {
     font-size: 5vh;
-
   }
-  
   @include sm {
     font-size: 4vh;
   }

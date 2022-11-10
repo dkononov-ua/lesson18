@@ -1,10 +1,9 @@
 @use "../mixins" as *;
 @use "../presets" as *;
 
-
-
 h1 {
   letter-spacing: 0.08em;
+
   line-height: 1.2em;
 }
 
@@ -14,7 +13,9 @@ h2 {
 
 h3 {
   letter-spacing: 0.05em;
+
   color: $color-primary;
+
   font-size: 1.125rem;
 }
 
@@ -23,15 +24,15 @@ a {
 }
 
 p {
-  color: $color-light;
   position: relative;
+
+  color: $color-light;
   text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 input:focus {
   outline: none;
 }
-
 
 image {
   z-index: -5;
