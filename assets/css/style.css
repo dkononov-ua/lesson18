@@ -322,7 +322,6 @@ body {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  -ms-flex-direction: column;
       flex-direction: row;
       flex-direction: column;
   -ms-flex-wrap: wrap;
@@ -333,7 +332,6 @@ body {
 
   min-height: 100vh;
   margin: 0;
-  margin-bottom: 10px;
 
   background-position: center;
   background-size: cover;
