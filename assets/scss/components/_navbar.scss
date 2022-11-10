@@ -2,60 +2,32 @@
 @use "../presets" as *;
 
 .navbar {
-	position: relative;
-	display: inline-block;
+	display: flex;
+	align-content: stretch;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
 	width: 100%;
 	background: linear-gradient(to bottom, rgb(95, 94, 94), rgba(0, 0, 0, 0));
-	height: 150px;
-	padding-top: 2rem;
-	z-index: 0;
-
-	@include ul-min {
-		font-size: 1.8rem;
-	}
-
-	@include ul-xl {
-		font-size: 1.6rem;
-	}
-	
-	@include xl-lg {
-		font-size: 1.4rem;
-	}
-	
-	@include lg-md {
-		font-size: 1.2rem;
-	}
-	
-	@include md-sm {
-		font-size: 1rem;
-	}
-
-	@include sm {
-		font-size: 1rem;
-		padding: 0;
-		padding-top: 20px;
-	}
-
 }
 
 .navbar_list {
+	padding-top: 10px;
 	position: relative;
 	display: flex;
-	padding: 0;
-	margin: 0;
 	justify-content: center;
 }
 .navbar_item {
 	position: relative;
 	list-style: none;
-	margin-right: $gap;
 	color: $color-primary;
 	margin: 10px;
   text-shadow: 0 0 20px rgb(255, 255, 255);
+font-size: 2rem;
+	font-weight: 300;
 }
 
 .navbar_item:hover,.navbar_item:focus {
-	position: relative;
   text-shadow: 0 0 10px #000000;
 	color: orange;
 }

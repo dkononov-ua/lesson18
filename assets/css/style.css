@@ -229,17 +229,11 @@ html {
 h1 {
   letter-spacing: 0.08em;
 
-  font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   line-height: 1.2em;
 }
 
 h2 {
-  position: relative;
-
-  color: rgba(2, 2, 24, 0.918);
-
-  font-family: "Josefin Sans", sans-serif;
   line-height: 1.2em;
 }
 
@@ -253,8 +247,6 @@ h3 {
 
 a {
   text-decoration: none;
-
-  color: #ffffff;
 }
 
 p {
@@ -268,62 +260,19 @@ input:focus {
   outline: none;
 }
 
-.title {
-  position: relative;
-  z-index: 10;
-  top: 20%;
+image {
+  z-index: -5;
+}
 
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: block;
-
-  color: black;
-}
-
-.title_name {
-  margin: 0;
-  margin-left: 8rem;
-
-  color: rgba(2, 2, 24, 0.918);
-  text-shadow: 0 0 15px rgb(255, 255, 255);
-
-  font-weight: 400;
-}
-
-.title_name:hover {
-  color: orange;
-  text-shadow: 0 0 50px orange;
-}
-
-.title_text {
-  position: relative;
-  left: 10rem;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: block;
-
-  max-width: 400px;
-  height: auto;
-  margin-bottom: 30px;
-  padding: 10px;
-
-  border-width: 2px;
-  border-style: groove;
-  border-color: #ffffff;
-  border-radius: 2em;
-
-  font-size: 2rem;
-}
-.wrapper {
-  position: relative;
-  z-index: 0;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -331,29 +280,7 @@ input:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 
-  margin-bottom: 10px;
-}
-
-.wrapper {
-  min-height: calc(100vh - 10px);
-
-  background-position: center;
-  background-size: cover;
-}
-
-image {
-  z-index: -5;
-}
-
-.navbar {
-  position: relative;
-  z-index: 0;
-
-  display: inline-block;
-
   width: 100%;
-  height: 150px;
-  padding-top: 2rem;
 
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(95, 94, 94)), to(rgba(0, 0, 0, 0)));
   background: -o-linear-gradient(top, rgb(95, 94, 94), rgba(0, 0, 0, 0));
@@ -370,28 +297,167 @@ image {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin: 0;
-  padding: 0;
+  padding-top: 10px;
 }
 
 .navbar_item {
   position: relative;
 
   margin: 10px;
-  margin-right: 20px;
 
   list-style: none;
 
   color: rgba(2, 2, 24, 0.918);
   text-shadow: 0 0 20px rgb(255, 255, 255);
+
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .navbar_item:hover,
 .navbar_item:focus {
-  position: relative;
-
   color: orange;
   text-shadow: 0 0 10px #000000;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  min-height: 100vh;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  z-index: -1;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 200px;
+  margin: 0;
+}
+
+.title_name {
+  margin: 0;
+
+  -webkit-transition: hover 0.5s;
+       -o-transition: hover 0.5s;
+          transition: hover 0.5s;
+
+  color: rgba(2, 2, 24, 0.918);
+  text-shadow: 0 0 15px rgb(255, 255, 255);
+
+  font-weight: 400;
+}
+
+.title_name:hover {
+  color: orange;
+  text-shadow: 0 0 50px orange;
+}
+
+.title_text {
+  position: relative;
+
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+
+  width: 100%;
+  padding: 0.5em 1em;
+}
+.title_text_discr {
+  width: 400px;
+  height: 400px;
+  margin-right: 100px;
+  padding: 10px;
+
+  border-width: 2px;
+  border-style: groove;
+  border-color: #ffffff;
+  border-radius: 2em;
+
+  font-size: 1.8rem;
+}
+
+.batton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  width: 250px;
+  height: 60px;
+  padding: 0.5em 1em;
+
+  -webkit-transition: background-color 0.5s;
+       -o-transition: background-color 0.5s;
+          transition: background-color 0.5s;
+  letter-spacing: 0.1em;
+
+  color: white;
+  border-width: 2px;
+  border-style: groove;
+  border-color: #ffffff;
+  border-radius: 2em;
+  background-color: rgba(255, 255, 255, 0.215);
+
+  font-size: 1.125rem;
+  font-size: 1.125rem;
+}
+
+.batton:hover,
+.batton:focus {
+  color: orange;
+  border-width: 3px;
+  border-color: orange;
+  background-color: rgba(0, 0, 0, 0.651);
+  text-shadow: 0 0 15px orange;
 }
 
 @media (min-width: 992px) {
@@ -425,9 +491,6 @@ image {
   .title_name {
     font-size: 8rem;
   }
-  .navbar {
-    font-size: 1.8rem;
-  }
 }
 
 @media (max-width: 1339.8px) and (min-width: 1200px) {
@@ -449,9 +512,6 @@ image {
   }
   .title_name {
     font-size: 7rem;
-  }
-  .navbar {
-    font-size: 1.6rem;
   }
 }
 
@@ -481,17 +541,11 @@ image {
   .title_name {
     font-size: 6rem;
   }
-  .navbar {
-    font-size: 1.4rem;
-  }
 }
 
 @media (max-width: 991.8px) and (min-width: 768px) {
   .title_name {
     font-size: 5rem;
-  }
-  .navbar {
-    font-size: 1.2rem;
   }
 }
 
@@ -505,14 +559,8 @@ image {
 
     font-size: 3rem;
   }
-  .title {
-    top: 4 rem;
-  }
   .title_name {
     font-size: 4rem;
-  }
-  .navbar {
-    font-size: 1rem;
   }
 }
 
@@ -536,16 +584,7 @@ image {
 
     font-size: 3rem;
   }
-  .title {
-    left: 10%;
-  }
   .title_name {
     font-size: 3rem;
-  }
-  .navbar {
-    padding: 0;
-    padding-top: 20px;
-
-    font-size: 1rem;
   }
 }

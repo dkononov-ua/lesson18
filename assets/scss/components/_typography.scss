@@ -13,33 +13,22 @@ html {
 
 h1 {
   letter-spacing: 0.08em;
-
-  font-family: $font-header;
   font-weight: 300;
   line-height: 1.2em;
 }
 
 h2 {
-  position: relative;
-
-  color: $color-primary;
-
-  font-family: $font-header;
   line-height: 1.2em;
 }
 
 h3 {
   letter-spacing: 0.05em;
-
   color: $color-primary;
-
   font-size: 1.125rem;
 }
 
 a {
   text-decoration: none;
-
-  color: $color-light;
 }
 
 p {
@@ -52,108 +41,6 @@ input:focus {
   outline: none;
 }
 
-.title {
-  position: relative;
-  display: flex;
-  color: black;
-  display: block;
-  z-index: 10;
-  top: 20%;
-
-  @include md-sm {
-    top: 4 rem;
-  }
-
-  @include sm {
-    left: 10%;
-  }
-}
-
-.title_name {
-  margin: 0;
-  color: $color-primary;
-  text-shadow: 0 0 15px rgb(255, 255, 255);
-  font-weight: 400;
-  margin-left: 8rem;
-
-  @include ul-min {
-    font-size: 8rem;
-  }
-
-  @include ul-xl {
-    font-size: 7rem;
-  }
-
-  @include xl-lg {
-    font-size: 6rem;
-  }
-
-  @include lg-md {
-    font-size: 5rem;
-  }
-
-  @include md-sm {
-    font-size: 4rem;
-  }
-
-  @include sm {
-    font-size: 3rem;
-  }
-}
-
-.title_name:hover {
-  color: orange;
-  text-shadow: 0 0 50px orange;
-}
-
-.title_text {
-  position: relative;
-
-  left: 10rem;
-  max-width: 400px;
-  height: auto;
-  margin-bottom: 30px;
-  padding: 10px;
-
-  display: flex;
-  display: block;
-
-  font-size: 2rem;
-
-  border-style: groove;
-  border-color: $color-light;
-  border-width: 2px;
-  border-radius: 2em;
-
-  @include ul-xl {
-  }
-
-  @include xl-md {
-  }
-
-  @include md-sm {
-  }
-
-  @include sm {
-  }
-
-}
-
-.wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  z-index: 0;
-  margin-bottom: 10px;
-}
-
-.wrapper {
-  min-height: calc(100vh - 10px);
-  background-position: center;
-  background-size: cover;
-}
 
 image {
   z-index: -5;
