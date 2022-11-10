@@ -160,6 +160,7 @@ class Carousel {
     this._initListeners();
     this._tick(this.isPlaying);
   }
+  
 }
 
 export default Carousel;

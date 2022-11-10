@@ -1,40 +1,61 @@
 @use "../mixins" as *;
 @use "../presets" as *;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-main;
+}
+
+body {
+  margin: 0;
+}
+
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  z-index: -1;
   display: flex;
   min-height: 100vh;
   margin: 0;
   margin-bottom: 10px;
+  background-position: center;
+  background-size: cover;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
-.wrapper {
-  background-position: center;
-  background-size: cover;
-  z-index: -1;
-}
+
 .title {
   margin: 0;
   display: inline-block;
-width: 100%;
-height: 200px;
+  width: 50%;
+  height: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-align-content: flex-start;
+  @include sm {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
 }
 
 .title_name {
   margin: 0;
   color: $color-primary;
   text-shadow: 0 0 15px rgb(255, 255, 255);
-  font-weight: 400;
-transition:hover 0.5s ;
+  font-weight: 600;
+  transition: hover 0.5s;
 
   @include ul-min {
     font-size: 8rem;
@@ -57,7 +78,7 @@ transition:hover 0.5s ;
   }
 
   @include sm {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -66,43 +87,64 @@ transition:hover 0.5s ;
   text-shadow: 0 0 50px orange;
 }
 
-.title_text {
-	position: relative;
-	display: inline-block;
-	display: flex;
-	align-content: space-around;
-	align-items: center;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	width: 100%;
+.title_b {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include sm {
+    width: 100%;
+  }
+}
+
+.title_box {
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  position: relative;
   padding: 0.5em 1em;
 
+  @include ul-min {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 2.2rem;
+  }
+
   @include ul-xl {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  @include ul-xl {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 2.1rem;
   }
 
   @include xl-md {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 2rem;
   }
 
   @include md-sm {
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1.8rem;
   }
 
   @include sm {
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
   }
-
 }
 
-.title_text_discr {
-	margin-right: 100px;
-	padding: 10px;
-	width: 400px;
-	height: 400px;
-  font-size: 1.8rem;
-
-  border-style: groove;
-  border-color: $color-light;
-  border-width: 2px;
-  border-radius: 2em;
+.title_text_description {
+  padding: 10px;
+  height: auto;
 }
-
-
