@@ -9,8 +9,8 @@
 .fa-angle-left,
 .fa-angle-right {
   -webkit-transition: opacity 1s ease-out;
-       -o-transition: opacity 1s ease-out;
-          transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
 
   opacity: 0.2;
   color: rgba(2, 2, 24, 0.918);
@@ -42,9 +42,15 @@
 }
 
 .control-prev {
-  background: -webkit-gradient(linear, left top, right top, from(rgb(255, 255, 255)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgb(255, 255, 255)),
+    to(rgba(0, 0, 0, 0))
+  );
   background: -o-linear-gradient(left, rgb(255, 255, 255), rgba(0, 0, 0, 0));
-  background:    linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, 0));
 }
 
 .control-pause {
@@ -57,8 +63,8 @@
   padding: 0;
 
   -webkit-transition: opacity 1s ease-out;
-       -o-transition: opacity 1s ease-out;
-          transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
 
   opacity: 0;
 }
@@ -66,8 +72,8 @@
 .control-pause:hover,
 .control-pause:focus {
   -webkit-transition: opacity 1s ease-in 0.01s;
-       -o-transition: opacity 1s ease-in 0.01s;
-          transition: opacity 1s ease-in 0.01s;
+  -o-transition: opacity 1s ease-in 0.01s;
+  transition: opacity 1s ease-in 0.01s;
 
   opacity: 1;
   text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
@@ -79,8 +85,8 @@
   display: block;
 
   -webkit-transform: translate(50%, 50%);
-      -ms-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
 
   opacity: 0;
 }
@@ -94,8 +100,8 @@
 .fa-angle-left:hover,
 .fa-angle-left:focus {
   -webkit-transition: opacity 1s ease-in 0.01s;
-       -o-transition: opacity 1s ease-in 0.01s;
-          transition: opacity 1s ease-in 0.01s;
+  -o-transition: opacity 1s ease-in 0.01s;
+  transition: opacity 1s ease-in 0.01s;
 
   opacity: 1;
   color: orange;
@@ -111,8 +117,8 @@
 .fa-angle-right:hover,
 .fa-angle-right:focus {
   -webkit-transition: opacity 1s ease-in 0.01s;
-       -o-transition: opacity 1s ease-in 0.01s;
-          transition: opacity 1s ease-in 0.01s;
+  -o-transition: opacity 1s ease-in 0.01s;
+  transition: opacity 1s ease-in 0.01s;
 
   opacity: 1;
   color: orange;
@@ -185,8 +191,8 @@
   height: 100%;
 
   -webkit-transition: opacity 1s;
-       -o-transition: opacity 1s;
-          transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
 
   opacity: 0;
   background-position: 50% 50%;
@@ -261,9 +267,15 @@ image {
 
   width: 100%;
 
-  background: -webkit-gradient(linear, left top, left bottom, from(rgb(95, 94, 94)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgb(95, 94, 94)),
+    to(rgba(0, 0, 0, 0))
+  );
   background: -o-linear-gradient(top, rgb(95, 94, 94), rgba(0, 0, 0, 0));
-  background:    linear-gradient(to bottom, rgb(95, 94, 94), rgba(0, 0, 0, 0));
+  background: linear-gradient(to bottom, rgb(95, 94, 94), rgba(0, 0, 0, 0));
 }
 
 .navbar_list {
@@ -302,7 +314,7 @@ image {
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -322,10 +334,10 @@ body {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-      flex-direction: row;
-      flex-direction: column;
+  flex-direction: row;
+  flex-direction: column;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -348,7 +360,7 @@ body {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
 
   width: 50%;
   height: 100%;
@@ -362,8 +374,8 @@ body {
   margin: 0;
 
   -webkit-transition: hover 0.5s;
-       -o-transition: hover 0.5s;
-          transition: hover 0.5s;
+  -o-transition: hover 0.5s;
+  transition: hover 0.5s;
 
   color: rgba(2, 2, 24, 0.918);
   text-shadow: 0 0 15px rgb(255, 255, 255);
@@ -388,9 +400,9 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -486,9 +498,9 @@ body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
 
     font-size: 2.2rem;
   }
@@ -524,17 +536,17 @@ body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   .title_box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
 
     font-size: 2.1rem;
   }
@@ -573,9 +585,9 @@ body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
 
     font-size: 2rem;
   }
@@ -616,9 +628,9 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 
     font-size: 1.8rem;
   }
@@ -669,9 +681,9 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 
     font-size: 1.6rem;
   }

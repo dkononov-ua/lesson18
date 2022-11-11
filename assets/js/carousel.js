@@ -1,16 +1,23 @@
 class Carousel {
   constructor(p) {
-    const settings = {...{ containerID: '#carousel', slideID: '.slide', interval: 5000, isPlaying: true }, ...p};
+    const settings = {
+      ...{
+        containerID: "#carousel",
+        slideID: ".slide",
+        interval: 5000,
+        isPlaying: true,
+      },
+      ...p,
+    };
 
     this.container = document.querySelector(settings.containerID);
     this.slidesItems = this.container.querySelectorAll(settings.slideID);
     this.interval = settings.interval;
     this.isPlaying = settings.isPlaying;
-
   }
 
   _initProps() {
-		this.currentSlide = 0;
+    this.currentSlide = 0;
     this.isPlaying = true;
 
     this.SLIDES_COUNT = this.slidesItems.length;
@@ -117,7 +124,6 @@ class Carousel {
       this.isPlaying = false;
       clearInterval(this.timerID);
     }
-    
   }
 
   _swipeEnd(e) {
@@ -160,7 +166,6 @@ class Carousel {
     this._initListeners();
     this._tick(this.isPlaying);
   }
-  
 }
 
 export default Carousel;
