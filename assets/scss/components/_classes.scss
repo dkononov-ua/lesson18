@@ -19,10 +19,10 @@ body {
   z-index: -1;
 
   display: flex;
-  flex-direction: row;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-items: center;
 
   min-height: 100vh;
   margin: 0;
@@ -37,12 +37,9 @@ body {
   align-items: center;
   flex-direction: row;
 
-  width: 50%;
   height: 100%;
   margin: 0;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  margin-left: 10%;
+  margin-top: 10%;
 
   @include sm {
     justify-content: center;
@@ -97,8 +94,6 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
 
-  width: 50%;
-
   @include sm {
     width: 100%;
   }
@@ -106,12 +101,9 @@ body {
 
 .title_box {
   position: relative;
-
   display: flex;
-
-  max-width: 500px;
-  height: auto;
-  padding: 0.5em 1em;
+  justify-content: center;
+  align-content: flex-start;
 
   @include ul-min {
     flex-direction: row;
@@ -149,7 +141,17 @@ body {
   }
 }
 
-.title_text_description {
-  height: auto;
+.title_text {
+  display: flex;
   padding: 10px;
+  width: 70%;
+}
+
+.title_description {
+  color: $color-primary;
+  margin: 20px;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.description {
+  margin-left: 50px;
 }

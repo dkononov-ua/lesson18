@@ -1,0 +1,12 @@
+.home_box {
+  position: absolute;
+  display: flex;
+  width: 50vh;
+  height: 100vh;
+  margin-left: 10%;
+
+  flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
