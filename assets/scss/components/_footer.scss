@@ -2,27 +2,27 @@
 @use "../presets" as *;
 
 .footer {
-  display: flex;
-  padding: ($gap * 2.5) $gap ($gap * 3.5);
+  position: absolute;
+  bottom: 0;
+
+  display: inline-block;
+  display: grid;
+  align-content: center;
+
+  height: 100%;
+  margin-left: $gap-x2;
 
   text-align: center;
 
   color: $color-gray;
 
   &__container {
-    max-width: $ul;
-    margin: auto;
-    padding-right: $gap;
-    padding-left: $gap;
+    display: grid;
+    align-items: center;
   }
 
   &__box {
     position: relative;
-
-    display: grid;
-    justify-content: center;
-
-    margin-bottom: $gap-x2;
 
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 
