@@ -29,6 +29,7 @@
 .navbar_item {
   position: relative;
 
+  display: block;
   margin: 10px;
 
   color: $color-primary;
@@ -55,6 +56,13 @@
 
 .navbar_item:hover,
 .navbar_item:focus {
-  color: orange;
-  text-shadow: 0 0 10px #000000;
+  color: $color-highlight;
+  display: inline-block;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.selected {
+  color: $color-highlight;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+  pointer-events: none;
 }

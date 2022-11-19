@@ -14,7 +14,7 @@
 
   text-align: center;
 
-  color: $color-gray;
+  color: $color-primary;
 
   &__container {
     display: grid;
@@ -23,8 +23,8 @@
 
   &__box {
     position: relative;
-
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+    margin: 10px;
 
     &::after {
       position: absolute;
@@ -36,7 +36,7 @@
 
       content: "";
 
-      background-color: rgba($color-light, 0.1);
+      background-color: rgba($color-primary, 0.2);
     }
 
     a {
@@ -48,19 +48,29 @@
 
       &:hover,
       &:focus {
-        color: $color-accent;
+        color: $color-primary;
       }
     }
 
     .fab {
       font-size: 36px;
+      color: $color-primary;
+      margin-bottom: 10px;
+
+      &:hover,
+      &:focus {
+        color: $color-highlight;
+        text-shadow: 0 0 40px rgb(0, 0, 0);
+
+      }
     }
   }
 
   &__copy {
+    margin-top: 20px;
+
     span {
       &:nth-of-type(1) {
-        margin-right: -0.5em;
 
         letter-spacing: 0.33em;
 
@@ -70,7 +80,7 @@
       &:nth-of-type(2) {
         letter-spacing: 0.05em;
 
-        color: $color-gray-light;
+        color: $color-primary;
 
         font-weight: 700;
       }
