@@ -23,8 +23,10 @@
 
   &__box {
     position: relative;
-    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+
     margin: 10px;
+
+    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 
     &::after {
       position: absolute;
@@ -53,15 +55,16 @@
     }
 
     .fab {
-      font-size: 36px;
-      color: $color-primary;
       margin-bottom: 10px;
+
+      color: $color-primary;
+
+      font-size: 36px;
 
       &:hover,
       &:focus {
         color: $color-highlight;
         text-shadow: 0 0 40px rgb(0, 0, 0);
-
       }
     }
   }
@@ -71,7 +74,6 @@
 
     span {
       &:nth-of-type(1) {
-
         letter-spacing: 0.33em;
 
         font-weight: 100;

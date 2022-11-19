@@ -276,6 +276,8 @@ image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -456,23 +458,6 @@ body {
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.135);
 
   font-size: 2.4rem;
-}
-
-.header {
-  margin: 10px 0;
-
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.body {
-  display: none;
-
-  padding: 10px;
-
-  border: 1px solid #777777;
-
-  font-size: 1.3rem;
 }
 
 .link {
@@ -746,6 +731,16 @@ body {
 
     font-size: 2.2rem;
   }
+  .description {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
+    font-size: 2.2rem;
+  }
   .link_go {
     font-size: 2.4rem;
   }
@@ -790,6 +785,24 @@ body {
         flex-wrap: nowrap;
   }
   .title_box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
+    font-size: 2.1rem;
+  }
+  .description {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .description {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -846,6 +859,16 @@ body {
 
     font-size: 2rem;
   }
+  .description {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
+    font-size: 2rem;
+  }
   .link_go {
     font-size: 1.2rem;
   }
@@ -885,6 +908,16 @@ body {
     font-size: 4rem;
   }
   .title_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    font-size: 1.8rem;
+  }
+  .description {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -946,6 +979,16 @@ body {
     width: 100%;
   }
   .title_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    font-size: 1.6rem;
+  }
+  .description {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

@@ -172,20 +172,40 @@ body {
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.135);
 
   font-size: 2.4rem;
+
+  @include ul-min {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    font-size: 2.2rem;
+  }
+  @include ul-xl {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  @include ul-xl {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    font-size: 2.1rem;
+  }
+  @include xl-md {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    font-size: 2rem;
+  }
+  @include md-sm {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    font-size: 1.8rem;
+  }
+  @include sm {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    font-size: 1.6rem;
+  }
 }
 
-.header {
-  margin: 10px 0;
-
-  font-size: 2rem;
-  font-weight: bold;
-}
-.body {
-  display: none;
-
-  padding: 10px;
-
-  border: 1px solid #777777;
-
-  font-size: 1.3rem;
-}
