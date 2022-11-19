@@ -14,7 +14,7 @@
 
 <body>
   <main>
-    <nav class="navbar">
+    <nav id="top" class="navbar">
       <ul class="navbar_list">
         <a href="../index.html">
           <li class="navbar_item">HOME</li>
@@ -38,17 +38,18 @@
 
       <div class="title_b">
         <div class="link">
-          <a href="#slides-container" class="link_go"><span>DOWN TO SLIDER</span></a>
+          <a id="a" href="#slides-container" class="link_go"><span>DOWN TO SLIDER</span></a>
         </div>
       </div>
 
       <div class="title_box">
         <div class="title_text">
-          <h2 class="title_description">Highlights of the trip</h2>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil modi
-            voluptas, reiciendis sint molestiae velit?
-          </p>
+          <div class="spoiler">
+            <div class="title_description">Highlights of the trip [...]</div>
+            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo possimus debitis quis
+              vitae, reprehenderit dolorem quos rem consectetur architecto suscipit sint ab beatae molestias
+              praesentium. Enim id optio doloribus laborum!</div>
+          </div>
         </div>
       </div>
 
@@ -90,9 +91,16 @@
         </div>
       </div>
     </div>
+    <div class="back_link">
+      <button class="back"><span>back</span></button>
+      <a href="../index.html" class="back"><span>home</span></a>
+    </div>
+
   </main>
 
   <script src="../assets/js/index.js" type="module"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="../assets/js/goto.js"></script>
 
 </body>
 
