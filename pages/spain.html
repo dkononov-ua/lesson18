@@ -16,7 +16,7 @@
   <main>
     <div class="wrapper" style="background-image: url(../assets/img/spaine/Image01.JPG);">
 
-      <nav class="navbar">
+      <nav id="top" class="navbar">
         <ul class="navbar_list">
           <a href="../index.html">
             <li class="navbar_item">HOME</li>
@@ -42,7 +42,7 @@
 
       <div class="title_b">
         <div class="link">
-          <a href="#slides-container" class="link_go"><span>DOWN TO SLIDER</span></a>
+          <a id="a" href="#slides-container" class="link_go"><span>DOWN TO SLIDER</span></a>
         </div>
 
         <div class="title_box">
@@ -110,9 +110,33 @@
         </div>
       </div>
     </div>
+
+    <div class="back_link">
+      <a href="#top" id="back"><i class="back fa-solid fa-chevron-up"></i></a>
+      <a href="../index.html"><i class="back fa-solid fa-house"></i></a>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container__cover">
+        <div class="footer__box">
+          <a href="https://www.facebook.com/denis.kononov.35"><i class="fab fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/kononov.den1s/"><i class="fab fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/dkononov-ua"><i class="fab fa-brands fa-git"></i></a>
+          <a href="https://www.tiktok.com/@deniskononov793"><i class="fab fa-brands fa-tiktok"></i></a>
+          <a href="https://t.me/DenisKononov"><i class="fab fa-brands fa-telegram"></i></a>
+        </div>
+        <div class="footer__copy">
+          <span>Denys</span><span>Kononov</span><span> 2022</span>
+        </div>
+      </div>
+    </footer>
   </main>
 
+  <script src="https://kit.fontawesome.com/f13f8af981.js" crossorigin="anonymous"></script>
   <script src="../assets/js/index.js" type="module"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="../assets/js/goto.js"></script>
+
 
 </body>
 

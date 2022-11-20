@@ -2,90 +2,62 @@
 @use "../presets" as *;
 
 .footer {
-  position: absolute;
-  bottom: 0;
-
-  display: inline-block;
-  display: grid;
-  align-content: center;
-
-  height: 100%;
-  margin-left: $gap-x2;
-
-  text-align: center;
-
+  display: flex;
+  display: block;
   color: $color-primary;
 
-  &__container {
-    display: grid;
+  &__container__cover {
+    position: relative;
+    display: block;
+    display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.435);
   }
 
   &__box {
     position: relative;
-
-    margin: 10px;
-
-    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
-
-    &::after {
-      position: absolute;
-      bottom: -$gap;
-      left: calc(50% - 75px / 2);
-
-      width: 75px;
-      height: 2px;
-
-      content: "";
-
-      background-color: rgba($color-primary, 0.2);
-    }
-
-    a {
-      display: block;
-
-      padding: $gap-sm;
-
-      transition: color 0.5s;
-
-      &:hover,
-      &:focus {
-        color: $color-primary;
-      }
-    }
-
-    .fab {
-      margin-bottom: 10px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    &:hover,
+    &:focus {
       color: $color-primary;
-
-      font-size: 36px;
-
-      &:hover,
-      &:focus {
-        color: $color-highlight;
-        text-shadow: 0 0 40px rgb(0, 0, 0);
-      }
     }
   }
 
   &__copy {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 
     span {
       &:nth-of-type(1) {
         letter-spacing: 0.33em;
-
         font-weight: 100;
       }
 
       &:nth-of-type(2) {
         letter-spacing: 0.05em;
-
         color: $color-primary;
-
         font-weight: 700;
       }
     }
+  }
+}
+
+.fab {
+  color: $color-primary;
+  font-size: 40px;
+  margin-left: 40px;
+  margin-top: 10px;
+
+  &:hover,
+  &:focus {
+    color: $color-highlight;
+    text-shadow: 0 0 40px rgb(0, 0, 0);
   }
 }
