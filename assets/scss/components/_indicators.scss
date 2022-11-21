@@ -3,10 +3,8 @@
 
 .indicators {
   position: absolute;
-  bottom: 2rem;
+  bottom: 7rem;
 
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
 
@@ -19,8 +17,8 @@
 }
 
 .indicator {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin: -40px 7.5px 0;
 
   border: 3px solid $color-primary;
@@ -33,7 +31,7 @@
   cursor: pointer;
 }
 .indicator.active {
-  border-color: orange;
+  border-color: rgba(218, 58, 5, 0.884);
 }
 @media (min-width: 992px) {
   .control-next,

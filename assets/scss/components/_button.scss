@@ -51,12 +51,8 @@
 }
 
 .back_link {
-  display: inline-block;
-  display: flex;
-  align-items: flex-end;
+  position: relative;
 
-  height: 100vh;
-  padding-bottom: 5%;
   padding-left: 5%;
 }
 

@@ -2,58 +2,75 @@
 @use "../presets" as *;
 
 .footer {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+
+  display: inline-block;
   display: flex;
-  display: block;
-  color: $color-primary;
+  align-items: flex-end;
 
-  &__container__cover {
-    position: relative;
-    display: block;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.435);
+  width: 100%;
+  padding-bottom: 20px;
+
+  background: linear-gradient(
+  to top,
+  rgba(0, 0, 0, 0.269),
+  rgba(255, 255, 255, 0)
+  );
+}
+
+.footer-box {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
   }
 
-  &__box {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    &:hover,
-    &:focus {
-      color: $color-primary;
-    }
-  }
+  span {
+    &:nth-of-type(1) {
+      letter-spacing: 0.05em;
 
-  &__copy {
-    margin-top: 10px;
-    margin-bottom: 20px;
+      font-weight: 400;
 
-    span {
-      &:nth-of-type(1) {
-        letter-spacing: 0.33em;
-        font-weight: 100;
+      @include ul-min {
+        font-size: 20px;
       }
+    }
 
-      &:nth-of-type(2) {
-        letter-spacing: 0.05em;
-        color: $color-primary;
-        font-weight: 700;
+    &:nth-of-type(2) {
+      letter-spacing: 0.05em;
+
+      color: $color-primary;
+
+      font-weight: 100;
+
+      @include ul-min {
+        font-size: 20px;
       }
     }
   }
 }
 
 .fab {
-  color: $color-primary;
-  font-size: 40px;
-  margin-left: 40px;
   margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+
+  color: $color-primary;
+  text-shadow: 0 0 40px rgb(255, 255, 255);
+
+  @include ul-min {
+    font-size: 40px;
+  }
+  @include ul-xl {
+    font-size: 30px;
+  }
 
   &:hover,
   &:focus {

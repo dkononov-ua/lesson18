@@ -1,0 +1,36 @@
+@use "../mixins" as *;
+@use "../presets" as *;
+
+.home_carousel {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 800px;
+  height: 100%;
+}
+
+.home {
+  z-index: 100;
+
+  width: 30%;
+  margin-left: 5%;
+}
+
+.home_title {
+  cursor: pointer;
+
+  @include ul-min {
+    font-size: 6rem;
+  }
+  &:hover,
+  &:focus {
+    color: $color-highlight;
+    text-shadow: 0 0 40px rgb(0, 0, 0);
+  }
+}
+.home_title_description {
+  @include ul-min {
+    font-size: 2rem;
+  }
+}

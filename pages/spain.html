@@ -5,65 +5,137 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SPAIN</title>
+  <title>SPAINE</title>
   <link rel="stylesheet" href="../assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
 
 <body>
-  <main>
-    <div class="wrapper" style="background-image: url(../assets/img/spaine/Image01.JPG);">
+  <div class="bg" style="background-image: url(../assets/img/spaine/Image01.JPG);">
 
-      <nav id="top" class="navbar">
-        <ul class="navbar_list">
-          <a href="../index.html">
-            <li class="navbar_item">HOME</li>
-          </a>
-          <a href="montenegro.html">
-            <li class="navbar_item">MONTENEGRO</li>
-          </a>
-          <a href="spain.html">
-            <li class="navbar_item selected">SPAIN</li>
-          </a>
-          <a href="#">
-            <li class="navbar_item">AUSTRIA</li>
-          </a>
-          <a href="ukraine.html">
-            <li class="navbar_item">UKRAINE</li>
-          </a>
-        </ul>
-      </nav>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid p-5 ">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-4">
 
-      <div class="title">
-        <h1 class="title_name">SPAIN</h1>
-      </div>
+            <li class="nav-item selected">
+              <a class="nav-link" href="../index.html">HOME</a>
+            </li>
 
-      <div class="title_b">
-        <div class="link">
-          <a id="a" href="#slides-container" class="link_go"><span>DOWN TO SLIDER</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/ukraine.html">ABOUT</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                MONTENEGRO
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="montenegro.html">Budva</a></li>
+                <li><a class="dropdown-item" href="#">Kotor</a></li>
+                <li><a class="dropdown-item" href="#">Herceg-Novy</a></li>
+                <li><a class="dropdown-item" href="#">Sveti Stefan</a></li>
+                <li><a class="dropdown-item" href="#">Tivat</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                UKRAINE
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ukraine.html">Lviv</a></li>
+                <li><a class="dropdown-item" href="#">Kyiv</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                SPAINE
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="spain.html">Barcelona</a></li>
+                <li><a class="dropdown-item" href="#">Montserrat</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                AUSTRIA
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Viena</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
+      </div>
+    </nav>
 
-        <div class="title_box">
-          <div class="title_text_description">
-            <h2>Highlights of the trip</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil modi
-              voluptas, reiciendis sint molestiae velit?
-            </p>
+    <main class="main">
+      <div class="container-fluid p-3 m-2">
+        <h1 class="title_name">Home page</h1>
+        <div class="title_b">
+          <div class="link">
+            <a id="a" href="#slides-container" class="link_go"><span>DOWN TO SLIDER</span></a>
           </div>
         </div>
+        <div class="title_box">
+          <div class="title_text">
+            <div class="spoiler">
+              <div class="title_description">Highlights of the trip [...]</div>
+              <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo possimus debitis
+                quis
+                vitae, reprehenderit dolorem quos rem consectetur architecto suscipit sint ab beatae molestias
+                praesentium. Enim id optio doloribus laborum!</div>
+            </div>
+          </div>
+        </div>
+    </main>
 
-      </div>
 
-    </div>
+  </div>
 
-    <div class="container">
+  <div class="box">
+    <div class="carousel_box">
       <div class="carousel" id="carousel">
         <div id="slides-container" class="slides">
-          <div class="slide item active" style="background-image: url(../assets/img/spaine/Image02.JPG)">
-            <span class="slide_text"></span>
+          <div class="slide item active" style="background-image: url(../assets/img/spaine/Image02.JPG)"><span
+              class="slide_text"></span>
           </div>
           <div class="slide item" style="background-image: url(../assets/img/spaine/Image03.png)">
             <span class="slide_text"></span>
@@ -104,39 +176,45 @@
           <div class="slide item" style="background-image: url(../assets/img/spaine/Image15.JPG)">
             <span class="slide_text"></span>
           </div>
-          <div class="slide item" style="background-image: url(../assets/img/spaine/Image16.JPG)"><span
-              class="slide_text"></span>
+          <div class="slide item" style="background-image: url(../assets/img/spaine/Image16.JPG)">
+            <span class="slide_text"></span>
           </div>
         </div>
+
       </div>
     </div>
-
     <div class="back_link">
       <a href="#top" id="back"><i class="back fa-solid fa-chevron-up"></i></a>
       <a href="../index.html"><i class="back fa-solid fa-house"></i></a>
     </div>
 
     <footer class="footer">
-      <div class="footer__container__cover">
-        <div class="footer__box">
-          <a href="https://www.facebook.com/denis.kononov.35"><i class="fab fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/kononov.den1s/"><i class="fab fa-brands fa-instagram"></i></a>
-          <a href="https://github.com/dkononov-ua"><i class="fab fa-brands fa-git"></i></a>
-          <a href="https://www.tiktok.com/@deniskononov793"><i class="fab fa-brands fa-tiktok"></i></a>
-          <a href="https://t.me/DenisKononov"><i class="fab fa-brands fa-telegram"></i></a>
-        </div>
-        <div class="footer__copy">
-          <span>Denys</span><span>Kononov</span><span> 2022</span>
+      <div class="container-fluid">
+        <div class="footer-box">
+          <div>
+            <a href="https://www.facebook.com/denis.kononov.35"><i class="fab fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/kononov.den1s/"><i class="fab fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/dkononov-ua"><i class="fab fa-brands fa-git"></i></a>
+            <a href="https://www.tiktok.com/@deniskononov793"><i class="fab fa-brands fa-tiktok"></i></a>
+            <a href="https://t.me/DenisKononov"><i class="fab fa-brands fa-telegram"></i></a>
+          </div>
+          <div class="footer-copy">
+            <span>© Denys Kononov</span><span> 2022</span><br>
+          </div>
         </div>
       </div>
     </footer>
-  </main>
+
+
+  </div>
 
   <script src="https://kit.fontawesome.com/f13f8af981.js" crossorigin="anonymous"></script>
   <script src="../assets/js/index.js" type="module"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="../assets/js/goto.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 
 </body>
 
