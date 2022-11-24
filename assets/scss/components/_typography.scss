@@ -3,6 +3,7 @@
 
 h1 {
   letter-spacing: 0.08em;
+  color: $color-highlight;
 
   line-height: 1.2em;
 }
@@ -28,6 +29,7 @@ p {
 
   color: $color-light;
   text-shadow: 0 0 10px rgb(0, 0, 0);
+
 }
 
 input:focus {

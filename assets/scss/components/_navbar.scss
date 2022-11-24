@@ -1,10 +1,50 @@
 @use "../mixins" as *;
 @use "../presets" as *;
 
-.navbar {
+.navbar-expand-lg {
   z-index: 999;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+  height: 100x;
 
-  height: 10vh;
 
-  background: linear-gradient(to bottom, rgb(95, 94, 94), rgba(0, 0, 0, 0));
 }
+
+.navbar-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-nav {
+}
+.nav-item {
+  color: $color-primary;
+  margin-right: 20px;
+  font-size: 20px;
+
+  &:hover {
+    color: $color-highlight;
+    text-shadow: 0 0 50px rgb(0, 0, 0);
+  }
+}
+.selected {
+  color: $color-highlight;
+  text-shadow: 0 0 30px rgb(255, 0, 0);
+}
+.nav-link {
+
+}
+.xui {
+  color: $color-highlight;
+  background-color: red;
+
+  color: $color-primary;
+  margin-right: 20px;
+  font-size: 20px;
+
+
+}
+

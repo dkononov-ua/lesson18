@@ -2,6 +2,7 @@
 @use "../presets" as *;
 
 .home_carousel {
+  z-index: -1;
   position: absolute;
   top: 0;
   right: 0;
@@ -11,10 +12,11 @@
 }
 
 .home {
-  z-index: 100;
+  position: static;
+  margin-left: 10%;
+}
 
-  width: 30%;
-  margin-left: 5%;
+.home_container {
 }
 
 .home_title {
