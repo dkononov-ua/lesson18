@@ -3,15 +3,18 @@
 
 .link-to {
   z-index: 5;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   margin: 30px;
-  }
+}
 
 .link-to-slider {
-  text-decoration: none;
   padding: 20px;
+
+  text-decoration: none;
 
   color: $color-primary;
   border-width: 1px;
@@ -20,12 +23,6 @@
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.326);
   text-shadow: 0 0 40px rgb(0, 0, 0);
-
-  &:hover,
-  &:focus {
-    color: $color-highlight;
-    text-shadow: 0 0 50px rgb(255, 255, 255);
-  }
 
   @include ul-min {
     font-size: 2.4rem;
@@ -49,11 +46,16 @@
 
     font-size: 1rem;
   }
+
+  &:hover,
+  &:focus {
+    color: $color-highlight;
+    text-shadow: 0 0 50px rgb(255, 255, 255);
+  }
 }
 
 .go-to {
   margin-left: 10%;
-
 }
 
 .link-to-back {
@@ -76,24 +78,24 @@
     text-shadow: 0 0 50px rgb(0, 0, 0);
   }
 }
- 
-.go-to {
-}
+
+
 
 .go-to-b {
   display: flex;
-  flex-direction: column;
   align-content: center;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
   flex-wrap: nowrap;
-
+  justify-content: center;
 }
 
 
 .text {
   text-decoration: dotted;
-  font-size: 20px;
-  font-family: $font-main;
+
   color: rgb(0, 0, 0);
+
+  font-family: $font-main;
+  font-size: 20px;
 }

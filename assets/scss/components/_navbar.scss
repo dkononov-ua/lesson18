@@ -3,26 +3,28 @@
 
 .navbar-expand-lg {
   z-index: 999;
-  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+
   height: 100x;
 
-
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0));
 }
 
 .navbar-box {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   align-content: center;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
   width: 100%;
 }
 
-.navbar-nav {
-}
+
 .nav-item {
-  color: $color-primary;
   margin-right: 20px;
+
+  color: $color-primary;
+
   font-size: 20px;
 
   &:hover {
@@ -34,17 +36,13 @@
   color: $color-highlight;
   text-shadow: 0 0 30px rgb(255, 0, 0);
 }
-.nav-link {
 
-}
 .xui {
+  margin-right: 20px;
+
   color: $color-highlight;
+  color: $color-primary;
   background-color: red;
 
-  color: $color-primary;
-  margin-right: 20px;
   font-size: 20px;
-
-
 }
-

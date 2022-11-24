@@ -2,27 +2,32 @@
 @use "../presets" as *;
 
 .page-box {
-display: flex;
-width: 100%;
-height: 100%;
-flex-direction: row;
-justify-content: center;
-justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 100%;
 }
 
 .page-name {
-  color: $color-highlight;
+  position: relative;
+
   display: block;
 
+  margin-top: 30px;
+
   cursor: pointer;
-	margin-top: 30px;
-	position: relative;
+
+  color: $color-highlight;
   text-shadow: 0 0 40px rgb(0, 0, 0);
 
 
   span {
     &:nth-of-type(1) {
       letter-spacing: 0.15em;
+
       font-weight: 600;
 
       @include ul-min {
@@ -37,11 +42,11 @@ justify-content: space-around;
       @include sm {
         font-size: 2rem;
       }
-
     }
 
     &:nth-of-type(2) {
       letter-spacing: 0.05em;
+
       font-weight: 600;
 
       @include ul-min {
@@ -66,33 +71,34 @@ justify-content: space-around;
 
 .title {
   display: block;
-width: 400px;
-padding: 10px;
+
+  width: 400px;
+  padding: 10px;
 
   color: $color-primary;
   border-width: 1px;
   border-style: groove;
   border-color: $color-highlight;
   border-radius: 20px;
-  text-shadow: 0 0 40px rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.082);
+  text-shadow: 0 0 40px rgb(0, 0, 0);
 }
 
 .title-spoiler {
+  position: relative;
+
+  margin-bottom: 20px;
+
   cursor: pointer;
-
-	position: relative;
-	margin-bottom: 20px;
-
-
 }
 
 .title-name {
-	position: relative;
-	@include ul-min {
+  position: relative;
+
+  @include ul-min {
     font-size: 2.2rem;
   }
-	@include ul-xl {
+  @include ul-xl {
     font-size: 2rem;
   }
   @include xl-sm {
@@ -101,15 +107,14 @@ padding: 10px;
   @include sm {
     font-size: 1.6rem;
   }
-
 }
 .title-text {
-	position: relative;
+  position: relative;
 
-	@include ul-min {
+  @include ul-min {
     font-size: 1.8rem;
   }
-	@include ul-xl {
+  @include ul-xl {
     font-size: 1.6rem;
   }
   @include xl-sm {
@@ -118,23 +123,22 @@ padding: 10px;
   @include sm {
     font-size: 1.3rem;
   }
-
 }
 
 .box {
   position: absolute;
-
-  width: 100%;
-  height: 100vh;
-
   position: absolute;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  width: 100%;
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
+  height: 100vh;
 }
 
 
