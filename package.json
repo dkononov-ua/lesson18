@@ -22,7 +22,7 @@
     "sort-css-media-queries": "^2.0.4"
   },
   "dependencies": {
-    "bootstrap": "^5.2.2",
+    "bootstrap": "^5.2.3",
     "normalize.css": "^8.0.1"
   }
 }
