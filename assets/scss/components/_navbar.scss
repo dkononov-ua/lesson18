@@ -2,10 +2,6 @@
 @use "../presets" as *;
 
 .navbar-expand-lg {
-  z-index: 999;
-
-  height: 100x;
-
   background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0));
 }
 
@@ -18,7 +14,6 @@
 
   width: 100%;
 }
-
 
 .nav-item {
   margin-right: 20px;
@@ -35,14 +30,4 @@
 .selected {
   color: $color-highlight;
   text-shadow: 0 0 30px rgb(255, 0, 0);
-}
-
-.xui {
-  margin-right: 20px;
-
-  color: $color-highlight;
-  color: $color-primary;
-  background-color: red;
-
-  font-size: 20px;
 }

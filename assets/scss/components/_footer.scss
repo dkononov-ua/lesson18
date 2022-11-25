@@ -59,8 +59,9 @@
 
 .fab {
   margin-top: 10px;
+  margin-right: 15px;
   margin-bottom: 10px;
-  margin-left: 40px;
+  margin-left: 15px;
 
   color: $color-primary;
   text-shadow: 0 0 40px rgb(255, 255, 255);
@@ -69,7 +70,13 @@
     font-size: 40px;
   }
   @include ul-xl {
+    font-size: 35px;
+  }
+  @include xl-sm {
     font-size: 30px;
+  }
+  @include sm {
+    font-size: 25px;
   }
 
   &:hover,

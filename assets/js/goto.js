@@ -15,3 +15,4 @@ $('#a').on('click', function () {
 $('.title-spoiler').on('click', function () {
   $(this).next().slideToggle(300);
 });
+

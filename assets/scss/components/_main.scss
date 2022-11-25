@@ -1,14 +1,27 @@
 @use "../mixins" as *;
 @use "../presets" as *;
 
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.main-box {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .page-box {
   display: flex;
+  align-items: center;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
   justify-content: space-around;
 
-  width: 100%;
-  height: 100%;
+  margin: 20px;
 }
 
 .page-name {
@@ -21,8 +34,6 @@
   cursor: pointer;
 
   color: $color-highlight;
-  text-shadow: 0 0 40px rgb(0, 0, 0);
-
 
   span {
     &:nth-of-type(1) {
@@ -65,14 +76,14 @@
   }
   &:hover {
     color: $color-highlight;
-    text-shadow: 0 0 50px rgb(255, 255, 255);
+    text-shadow: 0 0 50px rgb(0, 0, 0);
   }
 }
 
 .title {
   display: block;
 
-  width: 400px;
+  max-width: 800px;
   padding: 10px;
 
   color: $color-primary;
@@ -80,8 +91,12 @@
   border-style: groove;
   border-color: $color-highlight;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.082);
-  text-shadow: 0 0 40px rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.326);
+
+  &:hover {
+    color: $color-highlight;
+    text-shadow: 0 0 50px rgb(0, 0, 0);
+  }
 }
 
 .title-spoiler {
@@ -94,22 +109,60 @@
 
 .title-name {
   position: relative;
+}
 
-  @include ul-min {
-    font-size: 2.2rem;
+span {
+  &:nth-of-type(1) {
+    letter-spacing: 0.02em;
+
+    font-weight: 400;
+
+    @include ul-min {
+      font-size: 2rem;
+    }
+    @include ul-xl {
+      font-size: 1.8rem;
+    }
+    @include xl-sm {
+      font-size: 1.6rem;
+    }
+    @include sm {
+      font-size: 1.5rem;
+    }
   }
-  @include ul-xl {
-    font-size: 2rem;
-  }
-  @include xl-sm {
-    font-size: 1.8rem;
-  }
-  @include sm {
-    font-size: 1.6rem;
+
+  &:nth-of-type(2) {
+    letter-spacing: 0.05em;
+
+    font-weight: 100;
+
+    @include ul-min {
+      font-size: 1.4rem;
+    }
+    @include ul-xl {
+      font-size: 1.3rem;
+    }
+    @include xl-sm {
+      font-size: 1.2rem;
+    }
+    @include sm {
+      font-size: 1.1rem;
+    }
   }
 }
+
 .title-text {
   position: relative;
+
+  padding: 10px;
+
+  color: $color-light;
+  border-width: 1px;
+  border-style: groove;
+  border-color: $color-highlight;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.571);
+  text-shadow: 0 0 40px rgb(0, 0, 0);
 
   @include ul-min {
     font-size: 1.8rem;
@@ -140,10 +193,3 @@
   height: 100vh;
   height: 100vh;
 }
-
-
-
-
-
-
-

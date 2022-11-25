@@ -19,7 +19,7 @@
   color: $color-primary;
   border-width: 1px;
   border-style: groove;
-  border-color: $color-light;
+  border-color: $color-highlight;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.326);
   text-shadow: 0 0 40px rgb(0, 0, 0);
@@ -65,7 +65,7 @@
   color: $color-primary;
   border-width: 1px;
   border-style: groove;
-  border-color: $color-light;
+  border-color: $color-highlight;
   border-radius: 10px;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.135);
 
@@ -79,8 +79,6 @@
   }
 }
 
-
-
 .go-to-b {
   display: flex;
   align-content: center;
@@ -90,12 +88,10 @@
   justify-content: center;
 }
 
-
 .text {
   text-decoration: dotted;
 
   color: rgb(0, 0, 0);
 
   font-family: $font-main;
-  font-size: 20px;
 }

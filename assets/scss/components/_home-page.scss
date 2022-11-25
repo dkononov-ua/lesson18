@@ -7,8 +7,20 @@
   top: 0;
   right: 0;
 
-  width: 800px;
-  height: 100%;
+  height: 100vh;
+
+  @include ul-min {
+    width: 70%;
+  }
+  @include ul-xl {
+    width: 80%;
+  }
+  @include xl-sm {
+    width: 90%;
+  }
+  @include sm {
+    width: 100%;
+  }
 }
 
 .home {
@@ -25,6 +37,15 @@
   @include ul-min {
     font-size: 6rem;
   }
+  @include ul-xl {
+    font-size: 5rem;
+  }
+  @include xl-sm {
+    font-size: 4rem;
+  }
+  @include sm {
+    font-size: 3rem;
+  }
   &:hover,
   &:focus {
     color: $color-highlight;
@@ -33,6 +54,15 @@
 }
 .home_title_description {
   @include ul-min {
-    font-size: 2rem;
+    font-size: 2em;
+  }
+  @include ul-xl {
+    font-size: 1.8em;
+  }
+  @include xl-sm {
+    font-size: 1.6em;
+  }
+  @include sm {
+    font-size: 1.4em;
   }
 }
