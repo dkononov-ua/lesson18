@@ -42,6 +42,10 @@
   background: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, 0));
 }
 
+.controls__next {
+  background: linear-gradient(to left, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+}
+
 .controls__pause {
   top: 50%;
   right: 50%;
@@ -74,7 +78,7 @@
 .controls__prev {
   left: 0;
 
-  width: 30%;
+  width: 10%;
 }
 .fa-angle-left:hover,
 .fa-angle-left:focus {
