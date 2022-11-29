@@ -33,12 +33,12 @@
   cursor: pointer;
 }
 .indicators__item.active {
-  border-color: orange;
+  border-color: rgb(208, 8, 8);
 }
 @media (min-width: 992px) {
-  .control-next,
-  .control-prev,
-  .control-pause {
+  .controls__next,
+  .controls__prev,
+  .controls__pause {
     cursor: pointer;
   }
   .indicators__item {
