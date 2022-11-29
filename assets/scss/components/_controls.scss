@@ -1,7 +1,7 @@
 @use "../mixins" as *;
 @use "../presets" as *;
 
-.controls {
+.controls__item {
   position: absolute;
   top: 0;
 
@@ -23,9 +23,9 @@
   color: $color-primary;
 }
 
-.control-next,
-.control-prev,
-.control-pause {
+.controls__next,
+.controls__prev,
+.controls__pause {
   position: absolute;
   z-index: 0;
   top: 0;
@@ -38,11 +38,11 @@
   justify-content: center;
 }
 
-.control-prev {
+.controls__prev {
   background: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, 0));
 }
 
-.control-pause {
+.controls__pause {
   top: 50%;
   right: 50%;
   bottom: 50%;
@@ -55,14 +55,14 @@
 
   opacity: 0;
 }
-.control-pause:hover,
-.control-pause:focus {
+.controls__pause:hover,
+.controls__pause:focus {
   transition: opacity 1s ease-in 0.01s;
 
   opacity: 1;
   text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
 }
-.control-pause span {
+.controls__pause span {
   position: absolute;
 
   display: block;
@@ -71,7 +71,7 @@
 
   opacity: 0;
 }
-.control-prev {
+.controls__prev {
   left: 0;
 
   width: 30%;
@@ -84,7 +84,7 @@
   color: orange;
   text-shadow: 0 0 15px #000000;
 }
-.control-next {
+.controls__next {
   right: 0;
 
   width: 10%;

@@ -30,7 +30,7 @@
   list-style-type: none;
 }
 
-.slide {
+.slides__item {
   position: absolute;
   z-index: -5;
 
@@ -43,10 +43,10 @@
   background-position: 50% 50%;
   background-size: cover;
 }
-.slide a {
+.slides__item a {
   position: absolute;
 }
-.slide.active {
+.slides__item.active {
   opacity: 1;
 }
 
